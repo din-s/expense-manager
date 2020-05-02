@@ -4,8 +4,10 @@
   "description": "This is testing environment for my expensify app",
   "keywords": [],
   "main": "src/index.js",
+  "engines": {
+    "node": "12.16.x"
+  },
   "dependencies": {
-    "node":"12.16.x",
     "@babel/runtime": "^7.0.0",
     "enzyme": "latest",
     "enzyme-adapter-react-16": "1.15.2",
