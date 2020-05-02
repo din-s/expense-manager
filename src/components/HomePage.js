@@ -1,10 +1,15 @@
-import React from 'react';
-import ExpenseList from './ExpenseList'
-import ExpenseListFilter from './ExpenseListFilter'
+import React from "react";
+import ExpenseList from "./ExpenseList";
+import ExpenseListFilter from "./ExpenseListFilter";
+import ExpenseSummary from "./ExpenseSummary";
+const HomePage = () => (
+  <div>
+    <ExpenseListFilter />
 
-const HomePage = () => <div>
-  <ExpenseListFilter/>
- <ExpenseList />
- </div>;
+    <ExpenseSummary />
+
+    <ExpenseList />
+  </div>
+);
 
 export default HomePage;

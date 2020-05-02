@@ -11,6 +11,7 @@
     "enzyme-to-json": "3.4.4",
     "jest": "^25.3.0",
     "moment": "^2.24.0",
+    "numeral": "2.0.6",
     "raf": "3.3.2",
     "react": "^16.13.1",
     "react-dates": "^21.8.0",
@@ -33,8 +34,18 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "setupFilesAfterEnv": ["raf/polyfill", "<RootDir>/src/tests/setupTests.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFilesAfterEnv": [
+      "raf/polyfill",
+      "./src/tests/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
